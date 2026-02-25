@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Switcher</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <video autoplay muted loop id="myVideo"></video>
+
+  <!-- HUD: hidden by default, toggled by 'h' -->
+  <div id="hud" class="hud hud--hidden">
+    <div class="hud__row">
+      <span class="hud__badge">Performance</span>
+      <label class="hud__label">
+        Loadout:
+        <select id="loadoutSelect" class="hud__select"></select>
+      </label>
+      <button id="openSetup" class="hud__button">Setup</button>
+      <span class="hud__hint">Press <b>h</b> to hide/show HUD</span>
+    </div>
+    <div class="hud__status" id="statusText"></div>
+  </div>
+
+  <script src="js/config-client.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/runtime.js"></script>
+</body>
+</html>

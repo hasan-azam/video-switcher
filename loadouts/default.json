@@ -1,0 +1,29 @@
+{
+  "name": "Default",
+  "version": 1,
+  "initial": {
+    "type": "video",
+    "src": "videos/1-intro-video.mp4"
+  },
+  "bindings": {
+    "0": {
+      "type": "video",
+      "src": "videos/0-sloth.mp4",
+      "label": "Sloth"
+    },
+    "b": {
+      "type": "video",
+      "src": "videos/b-black.mp4",
+      "label": "Black"
+    },
+    "c": {
+      "type": "webcam",
+      "label": "Webcam"
+    },
+    "s": {
+      "type": "video",
+      "src": "videos/q-lets-go-out-today.mp4",
+      "label": "Static"
+    }
+  }
+}

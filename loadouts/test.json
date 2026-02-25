@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": 1,
+  "initial": {
+    "type": "video",
+    "src": ""
+  },
+  "bindings": {
+    "c": {
+      "type": "webcam",
+      "label": "Webcam"
+    }
+  }
+}

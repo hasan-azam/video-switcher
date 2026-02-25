@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #000;
+}
+
+#myVideo {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+  background: #000;
+}
+
+/* Performance HUD (toggleable) */
+.hud {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  max-width: 900px;
+  display: grid;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(10, 10, 10, 0.55);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hud--hidden {
+  display: none;
+}
+
+.hud__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.hud__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.16);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.hud__label {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.hud__select, .hud__button {
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 10px;
+  padding: 7px 10px;
+  outline: none;
+}
+
+.hud__button {
+  cursor: pointer;
+}
+
+.hud__button:hover {
+  background: rgba(255,255,255,0.14);
+}
+
+.hud__hint {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.hud__status {
+  font-size: 12px;
+  opacity: 0.85;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
