@@ -141,3 +141,108 @@ hr.sep {
   width: 100%;
   min-width: 0; /* ✅ allow shrink inside fixed table columns */
 }
+
+/* Notices */
+.notice {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  font-size: 13px;
+  line-height: 1.3;
+}
+.notice--error {
+  border-color: rgba(255, 90, 90, 0.38);
+  background: rgba(255, 90, 90, 0.10);
+}
+
+/* Binding cards */
+.bindings {
+  display: grid;
+  gap: 12px;
+}
+
+.bindingCard {
+  display: grid;
+  gap: 12px;
+}
+
+.bindingCard__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bindingCard__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bindingCard__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.14);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  text-transform: lowercase;
+}
+
+.bindingCard__meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Form fields inside a card */
+.bindingCard__grid {
+  display: grid;
+  grid-template-columns: 240px 220px 1fr 260px;
+  gap: 12px;
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .bindingCard__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .field--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 680px) {
+  .bindingCard__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field__label {
+  font-size: 12px;
+  font-weight: 650;
+  color: rgba(255,255,255,0.78);
+}
+
+.field__hint {
+  font-size: 12px;
+  color: rgba(255,255,255,0.62);
+  line-height: 1.25;
+}
+
+.hint--warn {
+  color: rgba(255,255,255,0.72);
+}
+
+.hint--error {
+  color: rgba(255, 140, 140, 0.92);
+}

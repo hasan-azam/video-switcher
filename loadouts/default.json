@@ -3,13 +3,58 @@
   "version": 1,
   "initial": {
     "type": "video",
-    "src": "videos/1-intro-video.mp4"
+    "src": "videos/2-emerald-street-logo.mp4"
   },
   "bindings": {
     "0": {
       "type": "video",
       "src": "videos/0-sloth.mp4",
       "label": "Sloth"
+    },
+    "1": {
+      "type": "video",
+      "src": "videos/1-intro-video.mp4",
+      "label": "Intro Video"
+    },
+    "2": {
+      "type": "video",
+      "src": "videos/2-emerald-street-logo.mp4",
+      "label": "Emerald Street Logo"
+    },
+    "3": {
+      "type": "video",
+      "src": "videos/3-i-love-you.mp4",
+      "label": "I Love You"
+    },
+    "4": {
+      "type": "video",
+      "src": "videos/4-disco-ball.mp4",
+      "label": "Disco Ball"
+    },
+    "5": {
+      "type": "video",
+      "src": "videos/5-party-visuals.mp4",
+      "label": "Party Visuals"
+    },
+    "6": {
+      "type": "video",
+      "src": "videos/6-spiral.mp4",
+      "label": "spiral"
+    },
+    "7": {
+      "type": "video",
+      "src": "videos/7-antique-fair-intro.mp4",
+      "label": "Antique Fair Intro"
+    },
+    "8": {
+      "type": "video",
+      "src": "videos/8-drum-hit-falling.mp4",
+      "label": "Drum Hit Falling"
+    },
+    "9": {
+      "type": "video",
+      "src": "videos/9-antique-fair-verse.mp4",
+      "label": "Antique Fair Verse"
     },
     "b": {
       "type": "video",
@@ -20,10 +65,25 @@
       "type": "webcam",
       "label": "Webcam"
     },
-    "s": {
+    "e": {
+      "type": "video",
+      "src": "videos/e-currents.mp4",
+      "label": "Currents"
+    },
+    "q": {
       "type": "video",
       "src": "videos/q-lets-go-out-today.mp4",
+      "label": "Let's Go Out Today"
+    },
+    "s": {
+      "type": "video",
+      "src": "videos/static.mp4",
       "label": "Static"
+    },
+    "w": {
+      "type": "video",
+      "src": "videos/w-i-love-you-for-today.mp4",
+      "label": "I Love You For Today"
     }
   }
 }

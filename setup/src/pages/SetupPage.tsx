@@ -12,29 +12,34 @@ import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Select } from "../components/ui/select";
-import { Table, Th, Td } from "../components/ui/table";
 
 const RESERVED_KEYS = new Set(["h"]); // HUD toggle
 
 type Row = {
+  id: string;
   keyId: string;
   type: "video" | "webcam";
   src: string;
   label: string;
 };
 
-function toRow(keyId: string, b: Binding): Row {
-  return {
+function toRows(bindings: Record<string, Binding> | undefined): Row[] {
+  const entries = Object.entries(bindings ?? {});
+  entries.sort((a, b) => a[0].localeCompare(b[0]));
+  return entries.map(([keyId, b], idx) => ({
+    id: `${keyId}-${idx}-${cryptoRandom()}`,
     keyId,
     type: b.type,
     src: b.type === "video" ? b.src : "",
     label: b.label ?? "",
-  };
+  }));
 }
 
 function fromRow(r: Row): [string, Binding] | null {
   const keyId = r.keyId.trim();
   if (!keyId) return null;
+
+  // enforce reserved key policy
   if (RESERVED_KEYS.has(keyId)) return null;
 
   if (r.type === "webcam") {
@@ -56,6 +61,15 @@ function emptyLoadout(name: string): Loadout {
   };
 }
 
+function cryptoRandom() {
+  // safe enough for UI keys without adding deps
+  try {
+    return crypto.getRandomValues(new Uint32Array(1))[0].toString(16);
+  } catch {
+    return Math.random().toString(16).slice(2);
+  }
+}
+
 export default function SetupPage() {
   const [videos, setVideos] = useState<string[]>([]);
   const [loadouts, setLoadouts] = useState<string[]>([]);
@@ -65,7 +79,6 @@ export default function SetupPage() {
 
   const [initialSrc, setInitialSrc] = useState<string>("");
   const [rows, setRows] = useState<Row[]>([]);
-
   const [isBusy, setIsBusy] = useState(false);
 
   const videoOptions = useMemo(() => ["", ...videos], [videos]);
@@ -83,9 +96,7 @@ export default function SetupPage() {
       const data = await fetchLoadout(name);
       setSelected(data.name);
       setInitialSrc(data.initial?.src ?? "");
-      const entries = Object.entries(data.bindings ?? {});
-      entries.sort((a, b) => a[0].localeCompare(b[0]));
-      setRows(entries.map(([k, b]) => toRow(k, b)));
+      setRows(toRows(data.bindings));
       setToast(`Loaded "${data.name}"`);
     } catch (e) {
       console.error(e);
@@ -100,6 +111,7 @@ export default function SetupPage() {
       await refreshLists("Default");
       await loadSelected("Default");
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function onCreate() {
@@ -139,26 +151,69 @@ export default function SetupPage() {
     }
   }
 
-  function addRow() {
-    setRows((r) => [...r, { keyId: "", type: "video", src: "", label: "" }]);
+  function addRow(type: Row["type"] = "video") {
+    setRows((r) => [
+      ...r,
+      {
+        id: `new-${cryptoRandom()}`,
+        keyId: "",
+        type,
+        src: "",
+        label: "",
+      },
+    ]);
   }
 
-  function updateRow(i: number, patch: Partial<Row>) {
-    setRows((r) => r.map((row, idx) => (idx === i ? { ...row, ...patch } : row)));
+  function updateRow(id: string, patch: Partial<Row>) {
+    setRows((r) => r.map((row) => (row.id === id ? { ...row, ...patch } : row)));
   }
 
-  function removeRow(i: number) {
-    setRows((r) => r.filter((_, idx) => idx !== i));
+  function removeRow(id: string) {
+    setRows((r) => r.filter((row) => row.id !== id));
   }
 
-  function captureKey(i: number, e: React.KeyboardEvent<HTMLInputElement>) {
+  function captureKey(id: string, e: React.KeyboardEvent<HTMLInputElement>) {
     e.preventDefault();
     e.stopPropagation();
     const keyId = normalizeKeyFromEvent(e.nativeEvent);
-    updateRow(i, { keyId });
+    updateRow(id, { keyId });
     if (RESERVED_KEYS.has(keyId)) {
       setToast(`"${keyId}" is reserved for the performance HUD toggle.`);
     }
+  }
+
+  // --- Duplicate key detection (computed) ---
+  const keyCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const r of rows) {
+      const k = r.keyId.trim();
+      if (!k) continue;
+      counts.set(k, (counts.get(k) ?? 0) + 1);
+    }
+    return counts;
+  }, [rows]);
+
+  const duplicateKeys = useMemo(() => {
+    const dups: string[] = [];
+    for (const [k, n] of keyCounts.entries()) {
+      if (n > 1) dups.push(k);
+    }
+    dups.sort((a, b) => a.localeCompare(b));
+    return dups;
+  }, [keyCounts]);
+
+  function rowKeyStatus(r: Row): { kind: "ok" | "warn" | "error"; msg?: string } {
+    const k = r.keyId.trim();
+    if (!k) return { kind: "warn", msg: "Key is required." };
+    if (RESERVED_KEYS.has(k)) return { kind: "error", msg: `"${k}" is reserved for the HUD toggle.` };
+    const count = keyCounts.get(k) ?? 0;
+    if (count > 1) return { kind: "error", msg: `Duplicate key "${k}" — each key must be unique.` };
+    return { kind: "ok" };
+  }
+
+  function rowContentStatus(r: Row): { kind: "ok" | "warn"; msg?: string } {
+    if (r.type === "video" && !r.src) return { kind: "warn", msg: "Pick a video." };
+    return { kind: "ok" };
   }
 
   function buildPayload(): Loadout {
@@ -170,6 +225,7 @@ export default function SetupPage() {
       bindings[keyId] = binding;
     }
 
+    // keep webcam convenience unless user intentionally removes it
     if (!bindings["c"]) bindings["c"] = { type: "webcam", label: "Webcam" };
 
     return {
@@ -181,6 +237,16 @@ export default function SetupPage() {
   }
 
   async function onSave() {
+    // block save if duplicates or reserved key present
+    if (duplicateKeys.length > 0) {
+      setToast(`Fix duplicate keys: ${duplicateKeys.join(", ")}`);
+      return;
+    }
+    if (rows.some((r) => RESERVED_KEYS.has(r.keyId.trim()))) {
+      setToast(`Fix reserved key usage (h).`);
+      return;
+    }
+
     setIsBusy(true);
     try {
       const payload = buildPayload();
@@ -223,7 +289,6 @@ export default function SetupPage() {
           <div className="row">
             <div className="sub">Loadout</div>
             <div className="stack">
-              {/* ✅ Use CSS grid for reliable spacing */}
               <div className="grid3">
                 <div className="grow">
                   <Select
@@ -248,13 +313,12 @@ export default function SetupPage() {
                 </Button>
               </div>
 
-              {/* ✅ grid prevents input/button collision */}
               <div className="grid2">
                 <div className="grow">
                   <Input
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
-                    placeholder='New loadout name (e.g. "Emerald Street Set")'
+                    placeholder='New loadout name'
                     disabled={isBusy}
                   />
                 </div>
@@ -270,7 +334,6 @@ export default function SetupPage() {
 
           <div className="row">
             <div className="sub">Initial video</div>
-            {/* ✅ use grid2 here as well to avoid overlap */}
             <div className="grid2">
               <div className="grow">
                 <Select
@@ -292,73 +355,96 @@ export default function SetupPage() {
           </div>
 
           <div className="inline tight">
-            <Button variant="secondary" onClick={addRow} disabled={isBusy}>
-              Add binding
+            <Button variant="secondary" onClick={() => addRow("video")} disabled={isBusy}>
+              Add video binding
+            </Button>
+            <Button variant="secondary" onClick={() => addRow("webcam")} disabled={isBusy}>
+              Add webcam binding
             </Button>
             <span className="toast">{toast}</span>
           </div>
+
+          {duplicateKeys.length > 0 && (
+            <div className="notice notice--error">
+              Duplicate keys detected: <b>{duplicateKeys.join(", ")}</b>. Each key must be unique.
+            </div>
+          )}
         </div>
       </Card>
 
-      <Card>
-        <Table>
-          {/* ✅ fixed table model so columns don’t visually bleed into each other */}
-          <colgroup>
-            <col style={{ width: 180 }} />
-            <col style={{ width: 140 }} />
-            <col /> {/* video column flexes */}
-            <col style={{ width: 220 }} />
-            <col style={{ width: 120 }} />
-          </colgroup>
+      <div className="bindings">
+        {rows.map((r) => {
+          const keyStatus = rowKeyStatus(r);
+          const contentStatus = rowContentStatus(r);
 
-          <thead>
-            <tr>
-              <Th>Key</Th>
-              <Th>Type</Th>
-              <Th>Video</Th>
-              <Th>Label</Th>
-              <Th style={{ width: 130 }}>&nbsp;</Th>
-            </tr>
-          </thead>
+          return (
+            <Card key={r.id}>
+              <div className="bindingCard">
+                <div className="bindingCard__top">
+                  <div className="bindingCard__title">
+                    <span className="bindingCard__badge">{r.type}</span>
+                    <span className="bindingCard__meta">
+                      {r.keyId.trim() ? (
+                        <>
+                          Key: <span className="kbd">{r.keyId.trim()}</span>
+                        </>
+                      ) : (
+                        "Unassigned key"
+                      )}
+                    </span>
+                  </div>
 
-          <tbody>
-            {rows.map((r, i) => (
-              <tr key={i}>
-                <Td>
-                  <div className="table-controls">
+                  <Button
+                    variant="secondary"
+                    onClick={() => removeRow(r.id)}
+                    disabled={isBusy}
+                    title="Remove binding"
+                  >
+                    Remove
+                  </Button>
+                </div>
+
+                <div className="bindingCard__grid">
+                  {/* Key */}
+                  <div className="field">
+                    <div className="field__label">Key</div>
                     <Input
                       value={r.keyId}
                       placeholder="Click, press a key…"
-                      onKeyDown={(e) => captureKey(i, e)}
-                      onChange={(e) => updateRow(i, { keyId: e.target.value })}
+                      onKeyDown={(e) => captureKey(r.id, e)}
+                      onChange={(e) => updateRow(r.id, { keyId: e.target.value })}
                       disabled={isBusy}
                     />
+                    {keyStatus.kind !== "ok" && (
+                      <div className={`field__hint ${keyStatus.kind === "error" ? "hint--error" : "hint--warn"}`}>
+                        {keyStatus.msg}
+                      </div>
+                    )}
                   </div>
-                </Td>
 
-                <Td>
-                  <div className="table-controls">
+                  {/* Type */}
+                  <div className="field">
+                    <div className="field__label">Type</div>
                     <Select
                       value={r.type}
-                      onChange={(e) =>
-                        updateRow(i, {
-                          type: e.target.value as Row["type"],
-                          src: e.target.value === "webcam" ? "" : r.src,
-                        })
-                      }
+                      onChange={(e) => {
+                        const next = e.target.value as Row["type"];
+                        updateRow(r.id, { type: next, src: next === "webcam" ? "" : r.src });
+                      }}
                       disabled={isBusy}
                     >
                       <option value="video">video</option>
                       <option value="webcam">webcam</option>
                     </Select>
+                   
                   </div>
-                </Td>
 
-                <Td>
-                  <div className="table-controls">
+                  {/* Video */}
+                  <div className="field field--wide">
+                    <div className="field__label">Video</div>
                     <Select
                       value={r.src}
-                      onChange={(e) => updateRow(i, { src: e.target.value })}
+                      onChange={(e) => updateRow(r.id, { src: e.target.value })}
                       disabled={isBusy || r.type === "webcam"}
                     >
                       {videoOptions.map((v) => (
@@ -367,36 +453,27 @@ export default function SetupPage() {
                         </option>
                       ))}
                     </Select>
+                    {r.type === "video" && contentStatus.kind !== "ok" && (
+                      <div className="field__hint hint--warn">{contentStatus.msg}</div>
+                    )}
                   </div>
-                </Td>
 
-                <Td>
-                  <div className="table-controls">
+                  {/* Label */}
+                  <div className="field">
+                    <div className="field__label">Label</div>
                     <Input
                       value={r.label}
-                      placeholder="Optional label"
-                      onChange={(e) => updateRow(i, { label: e.target.value })}
+                      placeholder="Optional label (for readability)"
+                      onChange={(e) => updateRow(r.id, { label: e.target.value })}
                       disabled={isBusy}
                     />
                   </div>
-                </Td>
-
-                <Td>
-                  <Button variant="secondary" onClick={() => removeRow(i)} disabled={isBusy}>
-                    Remove
-                  </Button>
-                </Td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
-
-        <div className="sub" style={{ marginTop: 10 }}>
-          Tip: special keys include <span className="kbd">ArrowUp</span>,{" "}
-          <span className="kbd">Enter</span>, <span className="kbd">Escape</span>,{" "}
-          <span className="kbd">Space</span>.
-        </div>
-      </Card>
+                </div>
+              </div>
+            </Card>
+          );
+        })}
+      </div>
     </div>
   );
 }
