@@ -6,11 +6,6 @@
     "src": "videos/2-emerald-street-logo.mp4"
   },
   "bindings": {
-    "0": {
-      "type": "video",
-      "src": "videos/0-sloth.mp4",
-      "label": "Sloth"
-    },
     "1": {
       "type": "video",
       "src": "videos/1-intro-video.mp4",
@@ -69,6 +64,11 @@
       "type": "video",
       "src": "videos/e-currents.mp4",
       "label": "Currents"
+    },
+    "n": {
+      "type": "video",
+      "src": "videos/0-sloth.mp4",
+      "label": "Sloth"
     },
     "q": {
       "type": "video",

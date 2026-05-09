@@ -1,28 +1,2119 @@
-[2026-02-25 20:52:45] SERVER_VERSION: dev-batch-reqlog-500-1
-[2026-02-25 20:52:45] setup UI exists: True :: C:\Code\video-switcher-v2\setup-dist\index.html
-[2026-02-25 20:52:45] Serving on 127.0.0.1:8000
-[2026-02-25 20:52:45] Performance: http://127.0.0.1:8000/index.html
-[2026-02-25 20:52:45] Setup: http://127.0.0.1:8000/setup/
-[2026-02-25 20:52:45] ROOT_DIR: C:\Code\video-switcher-v2
-[2026-02-25 20:52:45] VIDEOS_DIR: C:\Code\video-switcher-v2\videos
-[2026-02-25 20:52:45] LOADOUTS_DIR: C:\Code\video-switcher-v2\loadouts
-[2026-02-25 20:52:45] SETUP_DIST_DIR: C:\Code\video-switcher-v2\setup-dist
-[2026-02-25 20:52:47] REQ 127.0.0.1 GET /api/loadouts
-[2026-02-25 20:52:47] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
-[2026-02-25 20:52:48] REQ 127.0.0.1 GET /api/loadouts/Default
-[2026-02-25 20:52:48] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
-[2026-02-25 20:52:48] REQ 127.0.0.1 GET /favicon.ico
-[2026-02-25 20:52:49] LOG 127.0.0.1 GET /favicon.ico :: code 404, message File not found
-[2026-02-25 20:52:49] LOG 127.0.0.1 GET /favicon.ico :: "GET /favicon.ico HTTP/1.1" 404 -
-[2026-02-25 20:52:56] REQ 127.0.0.1 GET /setup/
-[2026-02-25 20:52:56] LOG 127.0.0.1 GET /setup/ :: "GET /setup/ HTTP/1.1" 200 -
-[2026-02-25 20:52:56] REQ 127.0.0.1 GET /setup/assets/index-BmvEVuIs.js
-[2026-02-25 20:52:56] LOG 127.0.0.1 GET /setup/assets/index-BmvEVuIs.js :: "GET /setup/assets/index-BmvEVuIs.js HTTP/1.1" 200 -
-[2026-02-25 20:52:56] REQ 127.0.0.1 GET /setup/assets/index-CpQygNOa.css
-[2026-02-25 20:52:56] LOG 127.0.0.1 GET /setup/assets/index-CpQygNOa.css :: "GET /setup/assets/index-CpQygNOa.css HTTP/1.1" 200 -
-[2026-02-25 20:52:57] REQ 127.0.0.1 GET /api/videos
-[2026-02-25 20:52:57] REQ 127.0.0.1 GET /api/loadouts
-[2026-02-25 20:52:57] LOG 127.0.0.1 GET /api/videos :: "GET /api/videos HTTP/1.1" 200 -
-[2026-02-25 20:52:57] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
-[2026-02-25 20:52:57] REQ 127.0.0.1 GET /api/loadouts/Default
-[2026-02-25 20:52:57] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:10:52] SERVER_VERSION: dev-batch-reqlog-500-1
+[2026-02-26 19:10:52] setup UI exists: True :: C:\Code\video-switcher-v2\setup-dist\index.html
+[2026-02-26 19:10:52] Serving on 127.0.0.1:8000
+[2026-02-26 19:10:52] Performance: http://127.0.0.1:8000/index.html
+[2026-02-26 19:10:52] Setup: http://127.0.0.1:8000/setup/
+[2026-02-26 19:10:52] ROOT_DIR: C:\Code\video-switcher-v2
+[2026-02-26 19:10:52] VIDEOS_DIR: C:\Code\video-switcher-v2\videos
+[2026-02-26 19:10:52] LOADOUTS_DIR: C:\Code\video-switcher-v2\loadouts
+[2026-02-26 19:10:52] SETUP_DIST_DIR: C:\Code\video-switcher-v2\setup-dist
+[2026-02-26 19:10:55] REQ 127.0.0.1 GET /index.html
+[2026-02-26 19:10:56] LOG 127.0.0.1 GET /index.html :: "GET /index.html HTTP/1.1" 304 -
+[2026-02-26 19:10:56] REQ 127.0.0.1 GET /css/style.css
+[2026-02-26 19:10:56] REQ 127.0.0.1 GET /js/player.js
+[2026-02-26 19:10:56] REQ 127.0.0.1 GET /js/config-client.js
+[2026-02-26 19:10:56] LOG 127.0.0.1 GET /css/style.css :: "GET /css/style.css HTTP/1.1" 304 -
+[2026-02-26 19:10:56] REQ 127.0.0.1 GET /js/runtime.js
+[2026-02-26 19:10:56] LOG 127.0.0.1 GET /js/player.js :: "GET /js/player.js HTTP/1.1" 304 -
+[2026-02-26 19:10:56] LOG 127.0.0.1 GET /js/config-client.js :: "GET /js/config-client.js HTTP/1.1" 304 -
+[2026-02-26 19:10:56] LOG 127.0.0.1 GET /js/runtime.js :: "GET /js/runtime.js HTTP/1.1" 304 -
+[2026-02-26 19:10:56] REQ 127.0.0.1 GET /api/loadouts
+[2026-02-26 19:10:57] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
+[2026-02-26 19:10:58] REQ 127.0.0.1 GET /api/loadouts/test
+[2026-02-26 19:10:58] LOG 127.0.0.1 GET /api/loadouts/test :: "GET /api/loadouts/test HTTP/1.1" 200 -
+[2026-02-26 19:10:58] REQ 127.0.0.1 GET /favicon.ico
+[2026-02-26 19:10:58] LOG 127.0.0.1 GET /favicon.ico :: code 404, message File not found
+[2026-02-26 19:10:58] LOG 127.0.0.1 GET /favicon.ico :: "GET /favicon.ico HTTP/1.1" 404 -
+[2026-02-26 19:11:05] REQ 127.0.0.1 GET /api/loadouts/Default
+[2026-02-26 19:11:05] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:11:10] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-26 19:11:10] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:11:11] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+[2026-02-26 19:11:11] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:11:11] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:11:11] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:11] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:11:11] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:11] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:11:11] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:11] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:11:11] REQ 127.0.0.1 GET /videos/5-party-visuals.mp4
+[2026-02-26 19:11:11] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:11] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:11:12] ERROR in do_GET path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:11:12] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:12] FATAL during request handling path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:11:12] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:13] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:11:13] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:11:19] REQ 127.0.0.1 GET /setup/
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /setup/ :: "GET /setup/ HTTP/1.1" 200 -
+[2026-02-26 19:11:20] REQ 127.0.0.1 GET /setup/assets/index-BmvEVuIs.js
+[2026-02-26 19:11:20] REQ 127.0.0.1 GET /setup/assets/index-CpQygNOa.css
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /setup/assets/index-CpQygNOa.css :: "GET /setup/assets/index-CpQygNOa.css HTTP/1.1" 200 -
+[2026-02-26 19:11:20] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:20] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /setup/assets/index-BmvEVuIs.js :: "GET /setup/assets/index-BmvEVuIs.js HTTP/1.1" 200 -
+[2026-02-26 19:11:20] REQ 127.0.0.1 GET /api/loadouts
+[2026-02-26 19:11:20] REQ 127.0.0.1 GET /api/videos
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /api/videos :: "GET /api/videos HTTP/1.1" 200 -
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
+[2026-02-26 19:11:20] REQ 127.0.0.1 GET /api/loadouts/Default
+[2026-02-26 19:11:20] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:12:23] REQ 127.0.0.1 PUT /api/loadouts/Default
+[2026-02-26 19:12:23] LOG 127.0.0.1 PUT /api/loadouts/Default :: "PUT /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:12:23] REQ 127.0.0.1 GET /api/videos
+[2026-02-26 19:12:23] REQ 127.0.0.1 GET /api/loadouts
+[2026-02-26 19:12:23] LOG 127.0.0.1 GET /api/videos :: "GET /api/videos HTTP/1.1" 200 -
+[2026-02-26 19:12:23] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
+[2026-02-26 19:12:23] REQ 127.0.0.1 GET /api/loadouts/Default
+[2026-02-26 19:12:23] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:12:50] REQ 127.0.0.1 PUT /api/loadouts/Default
+[2026-02-26 19:12:50] LOG 127.0.0.1 PUT /api/loadouts/Default :: "PUT /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:12:50] REQ 127.0.0.1 GET /api/videos
+[2026-02-26 19:12:50] REQ 127.0.0.1 GET /api/loadouts
+[2026-02-26 19:12:50] LOG 127.0.0.1 GET /api/videos :: "GET /api/videos HTTP/1.1" 200 -
+[2026-02-26 19:12:50] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
+[2026-02-26 19:12:50] REQ 127.0.0.1 GET /api/loadouts/Default
+[2026-02-26 19:12:50] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:13:22] REQ 127.0.0.1 GET /api/loadouts
+[2026-02-26 19:13:22] LOG 127.0.0.1 GET /api/loadouts :: "GET /api/loadouts HTTP/1.1" 200 -
+[2026-02-26 19:13:22] REQ 127.0.0.1 GET /api/loadouts/Default
+[2026-02-26 19:13:22] LOG 127.0.0.1 GET /api/loadouts/Default :: "GET /api/loadouts/Default HTTP/1.1" 200 -
+[2026-02-26 19:13:41] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-26 19:13:41] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:13:42] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:13:42] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:42] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+[2026-02-26 19:13:42] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:13:42] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:13:42] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:42] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:13:42] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:42] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:13:42] REQ 127.0.0.1 GET /videos/5-party-visuals.mp4
+[2026-02-26 19:13:42] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:42] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:13:43] ERROR in do_GET path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:43] FATAL during request handling path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:43] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:13:43] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:43] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:13:43] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:13:43] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:13:43] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:13:43] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:11] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:11] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:11] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:11] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:11] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:11] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:11] REQ 127.0.0.1 GET /videos/5-party-visuals.mp4
+[2026-02-26 19:14:11] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:12] ERROR in do_GET path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:12] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:12] FATAL during request handling path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:12] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:13] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:14:13] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:14] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:14] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:14] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:14] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:15] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-26 19:14:15] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:15] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:15] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:15] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:15] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+[2026-02-26 19:14:15] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:15] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:16] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:16] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:16] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:16] REQ 127.0.0.1 GET /videos/5-party-visuals.mp4
+GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:16] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:16] ERROR in do_GET path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:16] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:16] FATAL during request handling path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:16] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:17] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:14:17] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:19] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:19] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:19] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:19] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:20] REQ 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4
+[2026-02-26 19:14:20] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:20] ERROR in do_GET path=/videos/w-i-love-you-for-today.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:20] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:20] FATAL during request handling path=/videos/w-i-love-you-for-today.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:20] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:23] REQ 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4
+[2026-02-26 19:14:23] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:23] ERROR in do_GET path=/videos/w-i-love-you-for-today.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:23] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:23] FATAL during request handling path=/videos/w-i-love-you-for-today.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:23] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:26] REQ 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4
+[2026-02-26 19:14:26] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:26] ERROR in do_GET path=/videos/w-i-love-you-for-today.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:26] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:26] FATAL during request handling path=/videos/w-i-love-you-for-today.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:26] LOG 127.0.0.1 GET /videos/w-i-love-you-for-today.mp4 :: "GET /videos/w-i-love-you-for-today.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:47] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-26 19:14:47] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:47] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:47] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:47] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:47] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:47] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:48] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:48] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:48] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:48] REQ 127.0.0.1 GET /videos/5-party-visuals.mp4
+[2026-02-26 19:14:48] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:48] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:48] ERROR in do_GET path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:48] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:48] FATAL during request handling path=/videos/5-party-visuals.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:48] LOG 127.0.0.1 GET /videos/5-party-visuals.mp4 :: "GET /videos/5-party-visuals.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:50] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:14:50] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:53] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:53] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:53] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:53] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:14:53] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:53] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:55] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:55] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:55] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:55] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:55] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:14:55] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:14:55] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:14:55] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:55] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:14:55] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:14:58] REQ 127.0.0.1 GET /videos/9-antique-fair-verse.mp4
+[2026-02-26 19:14:58] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 200 -
+[2026-02-26 19:15:00] ERROR in do_GET path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-26 19:15:00] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-26 19:15:00] FATAL during request handling path=/videos/9-antique-fair-verse.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-26 19:15:00] LOG 127.0.0.1 GET /videos/9-antique-fair-verse.mp4 :: "GET /videos/9-antique-fair-verse.mp4 HTTP/1.1" 500 -
+[2026-02-27 11:06:18] REQ 127.0.0.1 GET /videos/3-i-love-you.mp4
+[2026-02-27 11:06:18] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 200 -
+[2026-02-27 11:06:20] ERROR in do_GET path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-27 11:06:20] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-27 11:06:21] FATAL during request handling path=/videos/3-i-love-you.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-27 11:06:21] LOG 127.0.0.1 GET /videos/3-i-love-you.mp4 :: "GET /videos/3-i-love-you.mp4 HTTP/1.1" 500 -
+[2026-02-27 11:06:21] REQ 127.0.0.1 GET /videos/4-disco-ball.mp4
+[2026-02-27 11:06:21] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 200 -
+[2026-02-27 11:06:23] ERROR in do_GET path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+[2026-02-27 11:06:23] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
+[2026-02-27 11:06:23] FATAL during request handling path=/videos/4-disco-ball.mp4:
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 188, in do_GET
+    return super().do_GET()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\http\server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\video-switcher-v2\server.py", line 123, in handle_one_request
+    return super().handle_one_request()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 193, in do_GET
+    return self._send_text("Internal Server Error (see server.log)\n", status=500)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\video-switcher-v2\server.py", line 307, in _send_text
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Code\video-switcher-v2\server.py", line 152, in end_headers
+    super().end_headers()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-02-27 11:06:23] LOG 127.0.0.1 GET /videos/4-disco-ball.mp4 :: "GET /videos/4-disco-ball.mp4 HTTP/1.1" 500 -
