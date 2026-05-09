@@ -1,7 +1,29 @@
-@"
+# Dependencies
 node_modules/
 setup/node_modules/
+
+# Vite / frontend cache
 .vite/
+setup/node_modules/.vite/
+
+# Logs
 *.log
 server.log
-"@ | Add-Content .gitignore
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local video/media files
+videos/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
