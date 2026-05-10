@@ -5,11 +5,14 @@
     "build": "npm --prefix setup ci && npm --prefix setup run build",
     "test": "echo \"No tests configured yet\"",
     "lint:commits": "commitlint --from=HEAD~1 --to=HEAD",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commit": "cz"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7"
   }
 }
