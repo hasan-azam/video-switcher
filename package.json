@@ -1,0 +1,8 @@
+{
+  "name": "video-switcher-v2",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix setup ci && npm --prefix setup run build",
+    "test": "echo \"No tests configured yet\""
+  }
+}
