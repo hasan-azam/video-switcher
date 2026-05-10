@@ -88,6 +88,11 @@
       return;
     }
 
+    if (keyId === "Escape") {
+      setHudVisible(false);
+      return;
+    }
+
     const binding = getBindingForKey(keyId);
     if (!binding) return;
 
