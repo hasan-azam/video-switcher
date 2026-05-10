@@ -1,5 +1,5 @@
 {
-  "name": "video-switcher-v2",
+  "name": "video-switcher",
   "private": true,
   "scripts": {
     "build": "npm --prefix setup ci && npm --prefix setup run build",
