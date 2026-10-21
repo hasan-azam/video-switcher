@@ -15,6 +15,10 @@ import { Select } from "../components/ui/select";
 
 const RESERVED_KEYS = new Set(["h"]); // HUD toggle
 
+// Shared with js/runtime.js so the Performance page opens on whatever
+// loadout was active here, instead of falling back to Default.
+const STORAGE_LAST_LOADOUT = "video_switcher:last_loadout";
+
 type Row = {
   id: string;
   keyId: string;
@@ -85,9 +89,11 @@ export default function SetupPage() {
 
   async function refreshLists(preserveSelected?: string) {
     const [v, l] = await Promise.all([fetchVideos(), fetchLoadouts()]);
+    const unique = Array.from(new Set(["Default", ...l]));
     setVideos(v);
-    setLoadouts(Array.from(new Set(["Default", ...l])));
+    setLoadouts(unique);
     if (preserveSelected) setSelected(preserveSelected);
+    return unique;
   }
 
   async function loadSelected(name: string) {
@@ -108,8 +114,14 @@ export default function SetupPage() {
 
   useEffect(() => {
     (async () => {
-      await refreshLists("Default");
-      await loadSelected("Default");
+      // Open on whatever loadout is currently live on the Performance page
+      // (shared via STORAGE_LAST_LOADOUT), falling back to Default if that
+      // loadout no longer exists or nothing's been selected yet.
+      const unique = await refreshLists();
+      const last = localStorage.getItem(STORAGE_LAST_LOADOUT);
+      const target = last && unique.includes(last) ? last : "Default";
+      setSelected(target);
+      await loadSelected(target);
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -121,6 +133,7 @@ export default function SetupPage() {
     try {
       const payload = emptyLoadout(name);
       await saveLoadout(name, payload);
+      localStorage.setItem(STORAGE_LAST_LOADOUT, name);
       setToast(`Created "${name}"`);
       setNewName("");
       await refreshLists(name);
@@ -251,6 +264,7 @@ export default function SetupPage() {
     try {
       const payload = buildPayload();
       await saveLoadout(selected, payload);
+      localStorage.setItem(STORAGE_LAST_LOADOUT, selected);
       setToast(`Saved "${selected}"`);
       await refreshLists(selected);
       await loadSelected(selected);
@@ -276,7 +290,10 @@ export default function SetupPage() {
         <div className="actions">
           <Button
             variant="secondary"
-            onClick={() => (window.location.href = "/index.html")}
+            onClick={() => {
+              localStorage.setItem(STORAGE_LAST_LOADOUT, selected);
+              window.location.href = "/index.html";
+            }}
             title="Go to performance page"
           >
             Performance

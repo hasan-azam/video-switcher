@@ -140,10 +140,17 @@ class Handler(SimpleHTTPRequestHandler):
                 pass
 
     def end_headers(self):
-        # Avoid caching setup assets while iterating
+        # Avoid caching app code/markup while iterating. Video files are left
+        # out so the browser can still cache those large downloads normally.
         try:
             path = urlparse(self.path).path
-            if path.startswith("/setup"):
+            no_cache = (
+                path.startswith("/setup")
+                or path.startswith("/js/")
+                or path.startswith("/css/")
+                or path in ("/", "/index.html")
+            )
+            if no_cache:
                 self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
                 self.send_header("Pragma", "no-cache")
                 self.send_header("Expires", "0")

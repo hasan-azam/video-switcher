@@ -115,8 +115,7 @@
   }
 
   async function init() {
-    // Stage defaults
-    videoEl.muted = true;
+    // Stage defaults (player.switchToVideo controls mute per-play)
     videoEl.autoplay = true;
     videoEl.loop = true;
 

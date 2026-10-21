@@ -3,7 +3,7 @@
   "version": 1,
   "initial": {
     "type": "video",
-    "src": "videos/2-emerald-street-logo.mp4"
+    "src": "videos/static.mp4"
   },
   "bindings": {
     "1": {

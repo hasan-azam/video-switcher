@@ -35,11 +35,27 @@ function createPlayer(videoEl, statusEl) {
     // Reassign and play
     videoEl.src = src;
     videoEl.load();
+    videoEl.muted = false;
 
     try {
       await videoEl.play();
       setStatus(`Playing: ${src}`);
     } catch (err) {
+      // Browsers block unmuted autoplay without a user gesture (e.g. the
+      // very first video on page load). Fall back to muted playback so
+      // something shows; sound resumes on the next key-triggered switch.
+      if (err && err.name === "NotAllowedError") {
+        try {
+          videoEl.muted = true;
+          await videoEl.play();
+          setStatus(`Playing muted (press any bound key for sound): ${src}`);
+          return;
+        } catch (err2) {
+          setStatus(`Play failed: ${String(err2)}`);
+          console.error(err2);
+          return;
+        }
+      }
       setStatus(`Play failed: ${String(err)}`);
       console.error(err);
     }

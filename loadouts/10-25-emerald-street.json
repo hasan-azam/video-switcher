@@ -1,0 +1,19 @@
+{
+  "name": "10-25 Emerald Street",
+  "version": 1,
+  "initial": {
+    "type": "video",
+    "src": ""
+  },
+  "bindings": {
+    "1": {
+      "type": "video",
+      "src": "videos/1 - intro breaking news.mp4",
+      "label": "Intro - Breaking News"
+    },
+    "c": {
+      "type": "webcam",
+      "label": "Webcam"
+    }
+  }
+}
