@@ -6,14 +6,107 @@
     "src": ""
   },
   "bindings": {
+    "0": {
+      "type": "video",
+      "src": "videos/0-antique-fair-intro.mp4",
+      "label": "Antique Fair Intro"
+    },
     "1": {
       "type": "video",
       "src": "videos/1 - intro breaking news.mp4",
       "label": "Intro - Breaking News"
     },
+    "2": {
+      "type": "video",
+      "src": "videos/2 - interlude news update.mp4"
+    },
+    "3": {
+      "type": "video",
+      "src": "videos/3-disco-ball.mp4",
+      "label": "Disco Ball"
+    },
+    "4": {
+      "type": "video",
+      "src": "videos/4-party-visuals.mp4",
+      "label": "Party"
+    },
+    "5": {
+      "type": "video",
+      "src": "videos/5-Animation _ Live Action.mp4",
+      "label": "Animation Live Action"
+    },
+    "6": {
+      "type": "video",
+      "src": "videos/6-train-logo.mp4",
+      "label": "Train Logo"
+    },
+    "7": {
+      "type": "video",
+      "src": "videos/7-spiral-verse.mp4",
+      "label": "Spiral Verse"
+    },
+    "8": {
+      "type": "video",
+      "src": "videos/8 - spiral chorus.mp4",
+      "label": "Spiral Chorus"
+    },
+    "9": {
+      "type": "video",
+      "src": "videos/9 - high intensity.mp4",
+      "label": "High Intensity"
+    },
+    "b": {
+      "type": "video",
+      "src": "videos/b-black.mp4",
+      "label": "Black"
+    },
     "c": {
       "type": "webcam",
       "label": "Webcam"
+    },
+    "e": {
+      "type": "video",
+      "src": "videos/E - antique-fair-verse.mp4",
+      "label": "antique fair verse"
+    },
+    "i": {
+      "type": "video",
+      "src": "videos/I - Let's Go Out Today.mp4",
+      "label": "Let's go out today"
+    },
+    "o": {
+      "type": "video",
+      "src": "videos/O - I Love You For Today.mp4",
+      "label": "I love you for today"
+    },
+    "q": {
+      "type": "video",
+      "src": "videos/Q - battle scene.mp4",
+      "label": "Battle scene"
+    },
+    "r": {
+      "type": "video",
+      "src": "videos/R - Coral.mp4",
+      "label": "Coral"
+    },
+    "s": {
+      "type": "video",
+      "src": "videos/static.mp4"
+    },
+    "t": {
+      "type": "video",
+      "src": "videos/T - Logo Loop.mp4",
+      "label": "Logo Loop"
+    },
+    "u": {
+      "type": "video",
+      "src": "videos/U - Strumming.mp4",
+      "label": "Strumming"
+    },
+    "y": {
+      "type": "video",
+      "src": "videos/Y - Sloth.mp4",
+      "label": "Sloth"
     }
   }
 }
