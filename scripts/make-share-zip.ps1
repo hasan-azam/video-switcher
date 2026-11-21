@@ -5,6 +5,12 @@
 #
 # Usage (from the repo root):
 #   powershell -ExecutionPolicy Bypass -File scripts\make-share-zip.ps1
+#   powershell -ExecutionPolicy Bypass -File scripts\make-share-zip.ps1 -Python C:\path\to\python.exe
+
+param(
+    # Python to bundle. Defaults to the one found on this computer.
+    [string]$Python
+)
 
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
@@ -14,7 +20,11 @@ $zip = Join-Path $dist "Video Switcher.zip"
 
 # --- Find a real Python install (not the Microsoft Store stub).
 $py = $null
-if (Get-Command py -ErrorAction SilentlyContinue) {
+if ($Python) {
+    if (-not (Test-Path $Python)) { throw "Python not found at $Python" }
+    $py = (Resolve-Path $Python).Path
+}
+if (-not $py -and (Get-Command py -ErrorAction SilentlyContinue)) {
     $py = (& py -3 -c "import sys; print(sys.executable)").Trim()
 }
 if (-not $py) {

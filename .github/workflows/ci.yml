@@ -53,3 +53,34 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+  share-zip:
+    name: Build and smoke-test Windows share zip
+    runs-on: windows-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Build share zip
+        shell: powershell
+        run: scripts\make-share-zip.ps1 -Python "${{ steps.python.outputs.python-path }}"
+
+      - name: Smoke-test share zip
+        shell: powershell
+        run: scripts\smoke-test-share-zip.ps1
+
+      - name: Upload share zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-switcher-windows
+          path: dist/Video Switcher.zip
+          retention-days: 3
+          compression-level: 0
