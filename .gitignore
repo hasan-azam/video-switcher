@@ -28,3 +28,5 @@ video-originals/
 Thumbs.db
 .vscode/
 .idea/
+# Shareable build output
+dist/
