@@ -48,7 +48,10 @@
     if (last && unique.includes(last)) {
       loadoutSelect.value = last;
     } else {
-      loadoutSelect.value = "Default";
+      // First launch in this browser: open a real show loadout rather than
+      // the blank Default, so a fresh install is ready to perform.
+      const firstReal = loadouts.find((n) => n !== "Default");
+      loadoutSelect.value = firstReal || "Default";
     }
   }
 
