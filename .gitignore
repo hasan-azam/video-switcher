@@ -20,7 +20,7 @@ __pycache__/
 *.py[cod]
 
 # Local video/media files
-videos/
+videos/render.mp4
 video-originals/
 
 # OS/editor files
