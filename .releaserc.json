@@ -17,6 +17,17 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    "@semantic-release/github"
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist/Video Switcher.zip",
+            "name": "Video-Switcher-for-Windows.zip",
+            "label": "Video Switcher for Windows (download this one)"
+          }
+        ]
+      }
+    ]
   ]
 }

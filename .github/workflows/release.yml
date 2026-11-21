@@ -11,9 +11,42 @@ permissions:
   pull-requests: write
 
 jobs:
+  share-zip:
+    name: Build and smoke-test Windows share zip
+    runs-on: windows-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Build share zip
+        shell: powershell
+        run: scripts\make-share-zip.ps1 -Python "${{ steps.python.outputs.python-path }}"
+
+      - name: Smoke-test share zip
+        shell: powershell
+        run: scripts\smoke-test-share-zip.ps1
+
+      - name: Hand zip to release job
+        uses: actions/upload-artifact@v4
+        with:
+          name: share-zip
+          path: dist/Video Switcher.zip
+          retention-days: 1
+          compression-level: 0
+
   release:
     name: Release
     runs-on: ubuntu-latest
+    # Never publish a release whose Windows download failed to build or test.
+    needs: share-zip
 
     steps:
       - name: Check out repository
@@ -35,6 +68,12 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Download share zip
+        uses: actions/download-artifact@v4
+        with:
+          name: share-zip
+          path: dist
 
       - name: Release
         run: npm run release

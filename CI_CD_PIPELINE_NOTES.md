@@ -353,9 +353,17 @@ flowchart TD
   ciBuild --> setupInstall[npm --prefix setup ci]
   ciBuild --> setupBuild[npm --prefix setup run build]
   ciWorkflow --> ciTest[npm test]
+  ciWorkflow --> ciShareZip["share-zip job (windows-latest)"]
+  ciShareZip --> makeZip["scripts/make-share-zip.ps1"]
+  makeZip --> smokeTest["scripts/smoke-test-share-zip.ps1"]
+  smokeTest --> prArtifact["PR artifact: video-switcher-windows"]
 
   pr --> merge[Merge to main]
   merge --> releaseWorkflow[".github/workflows/release.yml"]
+  releaseWorkflow --> releaseShareZip["share-zip job (windows-latest)"]
+  releaseShareZip --> makeZip
+  releaseShareZip --> zipHandoff[share-zip artifact]
+  zipHandoff -->|"needs: share-zip"| releaseInstall
   releaseWorkflow --> releaseInstall[npm ci]
   releaseWorkflow --> releaseBuild[npm run build]
   releaseWorkflow --> releaseTest[npm test]
@@ -373,5 +381,6 @@ flowchart TD
   changelog --> changelogFile["CHANGELOG.md"]
   gitPlugin --> changelogCommit[chore release commit]
   githubPlugin --> githubRelease[GitHub release]
+  githubRelease --> releaseAsset["Video-Switcher-for-Windows.zip"]
   version --> tag[Git tag vX.Y.Z]
 ```

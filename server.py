@@ -121,6 +121,10 @@ class Handler(SimpleHTTPRequestHandler):
     def handle_one_request(self) -> None:
         try:
             return super().handle_one_request()
+        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+            # Normal when the browser cancels a video range request (seeking,
+            # switching clips). Nothing to respond to; the socket is gone.
+            return
         except Exception:
             tb = traceback.format_exc()
             try:
@@ -194,6 +198,8 @@ class Handler(SimpleHTTPRequestHandler):
 
             return super().do_GET()
 
+        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+            raise
         except Exception:
             tb = traceback.format_exc()
             log_line(f"ERROR in do_GET path={self.path}:\n{tb}")
@@ -319,8 +325,18 @@ def main():
     ensure_dirs()
 
     host = "127.0.0.1"
-    port = 8000
-    httpd = ThreadingHTTPServer((host, port), Handler)
+    httpd = None
+    # Try 8000 first, but don't die if something else on this computer owns it.
+    for port in range(8000, 8020):
+        try:
+            httpd = ThreadingHTTPServer((host, port), Handler)
+            break
+        except OSError:
+            continue
+    if httpd is None:
+        print("Could not start: ports 8000-8019 are all in use on this computer.")
+        log_line("FATAL: no free port in 8000-8019")
+        raise SystemExit(1)
 
     setup_index = os.path.join(SETUP_DIST_DIR, "index.html")
     log_line(f"SERVER_VERSION: {SERVER_VERSION}")
@@ -333,12 +349,26 @@ def main():
     log_line(f"LOADOUTS_DIR: {LOADOUTS_DIR}")
     log_line(f"SETUP_DIST_DIR: {SETUP_DIST_DIR}")
 
-    try:
-        webbrowser.open(f"http://{host}:{port}/index.html")
-    except Exception:
-        pass
+    url = f"http://{host}:{port}/index.html"
+    print("")
+    print("  VIDEO SWITCHER IS RUNNING")
+    print("")
+    print(f"  If your browser didn't open by itself, go to:  {url}")
+    print("")
+    print("  Keep this window open while you use it.")
+    print("  To stop Video Switcher, just close this window.")
+    print("")
 
-    httpd.serve_forever()
+    if not os.environ.get("VIDEO_SWITCHER_NO_BROWSER"):
+        try:
+            webbrowser.open(url)
+        except Exception:
+            pass
+
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
 
 
 if __name__ == "__main__":
